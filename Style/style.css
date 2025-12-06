@@ -1,0 +1,246 @@
+/* header */
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: bisque;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    left: 0;
+    width: 100vw;      /* ou width: 100%; */
+    min-width: 0;
+    box-sizing: border-box; 
+}
+
+nav .logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+nav h1 {
+    flex: 1;
+    margin: 0 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;;
+}
+
+nav ul li {
+    margin-right: 20px;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav ul li:hover {
+    background-color: #2a8f19;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Fin Header */
+
+/* main */
+/*Préambule*/
+#Préambule,
+#Histoire,
+#Astérix,
+#Obélix   {
+    background: #79e3fd; /* léger fond pour démarquer la section */
+    margin: 20px 20px;
+    padding: 5px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,10);
+}
+#Préambule h2 {  
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    padding-left: 120px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    letter-spacing: 0.2em;
+}
+
+#Préambule .prea-flex {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 2000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    margin-left: 80px;
+}
+
+#Préambule .prea-flex p {
+   text-align: left; /* Ajoute ceci si besoin */
+   font-size: 37.5px;
+   margin: 0;
+   flex: 3;
+}
+
+#Préambule .prea-flex .image {
+    flex: 1;
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    object-fit: cover;
+}
+
+/*Histoire*/
+
+#Histoire h2 {  
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    padding-left: 120px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    letter-spacing: 0.2em;
+}
+
+#Histoire .histoire-flex {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 2000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    margin-left: 80px;
+}
+
+#Histoire .histoire-flex p {
+   text-align: left; /* Ajoute ceci si besoin */
+   font-size: 37.5px;
+   margin: 0;
+   flex: 3;
+}
+
+#Histoire .histoire-flex .image {
+    flex: 1;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/*Astérix*/
+#Astérix h2 {  
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    padding-left: 120px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    letter-spacing: 0.2em;
+}
+
+#Astérix .astérix-flex {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 2000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    margin-left: 80px;
+}
+
+#Astérix .astérix-flex p {
+   text-align: left; /* Ajoute ceci si besoin */
+   font-size: 37.5px;
+   margin: 0;
+   flex: 3;
+}
+
+#Astérix .astérix-flex .image {
+    flex: 1;
+    max-width: 400px;
+    max-height: 500px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    margin-bottom: 20px;
+}
+
+/*Obélix*/
+
+#Obélix h2 {  
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-left: 5px;
+    padding-left: 120px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    letter-spacing: 0.2em;
+}
+
+#Obélix .obélix-flex {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 2000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    margin-left: 80px;
+}
+
+#Obélix .obélix-flex p {
+   text-align: left; /* Ajoute ceci si besoin */
+   font-size: 37.5px;
+   margin: 0;
+   flex: 3;
+}
+
+#Obélix .obélix-flex .image {
+    flex: 1;
+    min-height: 500px;
+    min-width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
